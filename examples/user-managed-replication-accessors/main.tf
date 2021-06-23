@@ -3,7 +3,6 @@
 
 module "secret" {
   source                = "activeops-io/terraform-secrets-manager"
-  version               = "1.0.2"
   project_id            = var.project_id
   id                    = var.id
   secret                = var.secret

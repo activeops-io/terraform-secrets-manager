@@ -14,7 +14,6 @@ the identifiers will be granted `roles/secretmanager.secretAccessor` on th
 ```hcl
 module "secret" {
   source = "activeops-io/terraform-secrets-manager"
-  version = "1.0.1"
   project_id = "my-project-id"
   id = "my-secret"
   secret = "T0pS3cret!"
@@ -28,7 +27,6 @@ generated value.
 ```hcl
 module "secret" {
   source = "activeops-io/terraform-secrets-manager//modules/random"
-  version = "1.0.1"
   project_id = "my-project-id"
   id = "my-secret"
   # My application requires a 12 character alphanumeric password that must
@@ -46,7 +44,7 @@ module "secret" {
 
 | Name | Version |
 |------|---------|
-| terraform | ~> 0.13 |
+| terraform | ~> 1.0.0 |
 | google | ~> 3.44 |
 
 ## Providers
